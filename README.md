@@ -29,3 +29,11 @@ git push heroku main #taking into account you have a git repo
 ```
 
 The server is now deployed on heroku and can be interacted with Postman.
+
+## Results
+
+|   Model   | Logistic Regression | Gradient Boosting | Gradient Boosting PCA |
+| :-------: | :-----------------: | :---------------: | :-------------------: |
+| F1-score  |         0.5         |     **0.59**      |         0.57          |
+|  Recall   |        0.41         |     **0.54**      |         0.51          |
+| Precision |        0.66         |     **0.66**      |         0.64          |
