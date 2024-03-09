@@ -36,7 +36,7 @@ async def home():
 
 @app.post("/predict")
 async def predict(customer: Customer):
-    customer = pd.json_normalize(customer)
+    customer = pd.json_normalize(customer.dict())
     will_subscribe = predict_model(customer)
     answer = "No" if will_subscribe==np.array([0]) else "Yes"
     return {"Will the user subscribe:": answer}
