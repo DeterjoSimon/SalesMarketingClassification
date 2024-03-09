@@ -1,5 +1,5 @@
 # 
-FROM python:3.9
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 # 
 WORKDIR /app
@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 # 
 COPY ./app /app/app
 
-# 
-CMD ["worker:", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000"]
+# # 
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000"]
