@@ -40,7 +40,3 @@ async def predict(customer: Customer):
     will_subscribe = predict_model(customer)
     answer = "No" if will_subscribe==np.array([0]) else "Yes"
     return {"Will the user subscribe:": answer}
-
-if __name__=='__main__':
-    from os import environ
-    app.run(debug=False, host='0.0.0.0',port=environ.get("PORT", 8000))
