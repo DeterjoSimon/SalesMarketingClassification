@@ -9,6 +9,8 @@ with open( f"{BASE_DIR}/GradientBoostingClassifier-{__version__}.pkl", "rb") as 
     model = pickle.load(f)
 
 def predict_model(X):
+    print("THIS IS X:")
+    print(X)
     pred = model.predict(X)
     return pred
     
