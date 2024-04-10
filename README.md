@@ -1,6 +1,13 @@
-# 2021AI
+# Business Technical Case
 
-This is a technical case for my interview at 2021AI.
+This is a technical case project I choose to embark in to test my ML techniques in 7hrs.
+
+A bank has collected a large dataset of marketing data from their users. This dataset contains both continuous and categorical features which need to be considered. My task as a data scientist is to analyse the data and build a relevant model to predict if a customer would be willing to subscribe to additional products from the bank. 
+
+This problem was tackled in a supervised learning manner. I first analysed the data and got a sense of what the feature domain was about. This led me after to start the ML development process. 
+I.e. Various pre-processing techniques were tested and implemented, combined with a suitable ML model. Finally the model was trained and then evaluated in order to yield its performance. 
+
+Afterwards, model weights and prediction outcomes were studied to get an idea of how the model interpreted the data and what could be improved upon. Due to time constraints, I did not dwell on hyperparameter fine-tuning - I proceeded to deploy my model as an interactive endpoint. Building a quick and easy FastAPI, I deployed the model and its endpoints to a docker container. This latter was then published and monitored through a simple Heroku server.  
 
 ## How to deploy the API
 
