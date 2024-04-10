@@ -44,3 +44,15 @@ The server is now deployed on heroku and can be interacted with Postman.
 | F1-score  |         0.5         |     **0.59**      |         0.57          |
 |  Recall   |        0.41         |     **0.54**      |         0.51          |
 | Precision |        0.66         |     **0.66**      |         0.64          |
+
+## Possible improvements
+
+- Try different kind of pre-processing methods (Robust Scaler, Quantile Transformer etc…)
+- Try other kind of models HistGradientBoosting, DecisionTrees etc…
+- A lot of different feature engineering. The categorical features hide a lot of things. Probably data imputation, ICA, LDA, RFE… There’s class imbalance.
+- Instead of Heroku, I could have used Azure, AWS, GoogleCloud and use their Docker Management services. 
+- Work more on my API endpoints. Enforce a better structure and flexibility (some features could be missing and the API should be able to handle it).
+- Allow to load or choose different models, here I only allow one specific model. 
+- This would then follow-up on applying Unit Tests. 
+- Finally, a proper github actions pipeline for any updates. 
+
